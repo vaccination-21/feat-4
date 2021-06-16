@@ -55,7 +55,7 @@ body {
 
 #chatHeader {
   margin: 10px 10px;
-  margin-top: 40px;
+  margin-top: 5em;
   padding: 10px 15px; 
  }
 #btnClose {border: none; background: none; float: right;}
@@ -104,6 +104,10 @@ form {
 #btnSubmit:hover{
   background:#fff;
   color:#2f68f0;
+}
+
+.float_div .sub_wrap {
+  width: 20vw;
 }
 
 
