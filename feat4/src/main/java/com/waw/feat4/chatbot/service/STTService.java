@@ -18,8 +18,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class STTService {
 	public String clovaSpeechToText(String filePathName, String language) {
-		String clientId = "o6sf2oyjlr";             // Application Client ID";
-        String clientSecret = "MaJfm20LEEHB8Dbx5rJNnru6NnhdFZPjHmQ2DAF6";     // Application Client Secret";
+		String clientId = "5apxaqyd6m";             // Application Client ID";
+        String clientSecret = "S4zPCTxPwSu9hQ0CLek5Wb2YCMag1tBmiKCYcVw2";     // Application Client Secret";
         String result = "";
         
         try {
@@ -78,8 +78,8 @@ public class STTService {
 	}
 	
 	public String clovaSpeechToText2(String filePathName) {
-		String clientId = "o6sf2oyjlr";             // Application Client ID";
-        String clientSecret = "MaJfm20LEEHB8Dbx5rJNnru6NnhdFZPjHmQ2DAF6";     // Application Client Secret";
+		String clientId = "5apxaqyd6m";             // Application Client ID";
+        String clientSecret = "S4zPCTxPwSu9hQ0CLek5Wb2YCMag1tBmiKCYcVw2";     // Application Client Secret";
         String result = "";
         
         try {

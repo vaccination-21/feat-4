@@ -32,4 +32,14 @@ public class HomeController {
 		return "chatForm"; 
 	}
 	
+	@RequestMapping(value = "chat/1", method = RequestMethod.GET) 
+	public String list1() {
+		return "list1";
+	}
+	
+	@RequestMapping(value = "chat/2", method = RequestMethod.GET) 
+	public String list2() {
+		return "list2";
+	}
+	
 }

@@ -41,7 +41,7 @@ body {
 }
 
 .chat_home .chat_intro .title {
-  font-size: 60px;
+  font-size: 50px;
   margin-bottom: 50px;
 }
 
@@ -66,7 +66,9 @@ body {
   height: 60vh; 
   width: 500px;  
   padding:10px 15px; 
-  background-color: #4d7ef2;}
+  background-color: #4d7ef2;
+    overflow:auto;
+  }
 
 .wrap .chat_input{
   display: flex;
@@ -114,9 +116,9 @@ form {
 .msgBox > span {padding:3px 5px; word-break:break-all; display:block; 
 							 max-width:300px; margin-bottom: 10px; border-radius: 10px}
 .msgBox.send > span {background:#8ec051; float:right;}
-.msgBox.receive > h3{
+.msgBox.receive > .name{
   text-align: left;
   padding:0;
 }
-.msgBox.receive > span {background:#2f68f0; float:left;}
+/* .msgBox.receive > .dsc {background:#2f68f0; float:left;} */
 

@@ -62,18 +62,18 @@
                         
                         chunks = [];
                         const audioURL = URL.createObjectURL(blob);
-                        //audio.src = audioURL;
-                        //a.href=audio.src;
-                       //blob:http://localhost:8011/6377d19d-2ca8-49b1-a37f-068d602ceb60    
+                        audio.src = audioURL;
+                        a.href=audio.src;
+                        blob:http://localhost:9090/chat
                         a.href=audioURL;                   
                         a.download = clipName;                      
-                       //a.innerHTML = "DOWN"
+                       a.innerHTML = "DOWN"
 						a.click(); // 다운로드 폴더에 저장하도록 클릭 이벤트 발생		
 						
 						//서버로 업로드: 다운로드 후 1초 대기
-						/*setTimeout(function(){
+						setTimeout(function(){
 							fileUpload(clipName + ".mp3"); //파일명
-						}, 1000);*/
+						}, 1000);
 						//파일 다운로드 하지 않으니까 1초 대기할 필요 없음
 						fileUpload(blob, clipName); //파일 데이터와 파일명 전달
 						
@@ -162,8 +162,8 @@
 					console.log([b]);
 					if(bubbles[b].type == 'text'){ //기본 답변인 경우
 						/*chatBox에 받은 메시지 출력 (챗봇의 답변))*/
-						$('#chatBox').append('<div class="msgBox receive"><br><h3>🤖 WAW팀 챗봇</h3><br><span>' +
-											bubbles[b].data.description + '</span></div><br><br>');	
+						$('#chatBox').append('<div class="msgBox receive"><div class="name">🤖 WAW팀 챗봇</div><br><div class="dsc">' +
+											bubbles[b].data.description + '</div></div><br><br>');	
 						//챗봇으로 부터 받은 텍스트 답변을 음성으로 변환하기 위해  TTS  호출
 						callAjaxTTS(bubbles[b].data.description);		
 						//alert(bubbles+", "+bubbles[b].data.description);			

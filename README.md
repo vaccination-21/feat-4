@@ -3,6 +3,6 @@
 
 
 
-## 챗봇 네비게이션 프로토타입 완성
+## 챗봇 네비게이션 프로토타입 
 
-![](img\chat_test.gif)
+![](img\chat_list.gif)
